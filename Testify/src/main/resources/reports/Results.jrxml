@@ -1,0 +1,90 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Results" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aaba0399-99cc-40bd-8761-d0c03b30d69a">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Mysql"/>
+	<query language="SQL"><![CDATA[select * from result;]]></query>
+	<field name="result_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="result_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="result_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="result"/>
+	</field>
+	<field name="quiz_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="quiz_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="quiz_code"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="result"/>
+	</field>
+	<field name="user_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="user_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="user_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="result"/>
+	</field>
+	<field name="correct_answers" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="correct_answers"/>
+		<property name="com.jaspersoft.studio.field.label" value="correct_answers"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="result"/>
+	</field>
+	<field name="incorrect_answers" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="incorrect_answers"/>
+		<property name="com.jaspersoft.studio.field.label" value="incorrect_answers"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="result"/>
+	</field>
+	<group name="result_id">
+		<expression><![CDATA[$F{result_id}]]></expression>
+	</group>
+	<group name="quiz_code">
+		<expression><![CDATA[$F{quiz_code}]]></expression>
+	</group>
+	<group name="user_id">
+		<expression><![CDATA[$F{user_id}]]></expression>
+	</group>
+	<group name="correct_answers">
+		<expression><![CDATA[$F{correct_answers}]]></expression>
+	</group>
+	<group name="incorrect_answers">
+		<expression><![CDATA[$F{incorrect_answers}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch">
+		<element kind="staticText" uuid="7731cf37-76f9-4a59-8458-f75f9cd10987" x="0" y="0" width="100" height="30">
+			<text><![CDATA[result_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b5ce139-ab0d-4b5a-93d0-3c04e392ca4d"/>
+		</element>
+		<element kind="staticText" uuid="1ec20ec2-6d01-4d43-a03a-3d30a16993cb" x="126" y="0" width="100" height="30">
+			<text><![CDATA[quiz_code]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d0b6ccd-2eca-48a5-b543-a844f0bf8c9d"/>
+		</element>
+		<element kind="staticText" uuid="d3d6f669-f261-4e67-be31-f4964d0058bb" x="252" y="0" width="100" height="30">
+			<text><![CDATA[user_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8258385b-34e2-4241-a8e0-dc5bd8921d68"/>
+		</element>
+		<element kind="staticText" uuid="0837e090-fb04-4d7f-a319-57bd66e5b732" x="420" y="0" width="100" height="30">
+			<text><![CDATA[correct_answers]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9c75352f-288c-483a-93e8-0e14583b3b30"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<element kind="textField" uuid="3bfdf4e5-8a31-4656-8cc5-94dc43c94b68" x="0" y="40" width="100" height="30">
+				<expression><![CDATA[$F{result_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b5ce139-ab0d-4b5a-93d0-3c04e392ca4d"/>
+			</element>
+			<element kind="textField" uuid="b3a2ac62-77bd-456f-af3c-703e72096631" x="125" y="40" width="100" height="30">
+				<expression><![CDATA[$F{quiz_code}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d0b6ccd-2eca-48a5-b543-a844f0bf8c9d"/>
+			</element>
+			<element kind="textField" uuid="62001738-8398-411e-b14e-62d5832bb5ab" x="252" y="40" width="100" height="30">
+				<expression><![CDATA[$F{user_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8258385b-34e2-4241-a8e0-dc5bd8921d68"/>
+			</element>
+			<element kind="textField" uuid="bbd50bae-1044-472b-895c-a604eb5da5df" x="420" y="40" width="100" height="30">
+				<expression><![CDATA[$F{correct_answers}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9c75352f-288c-483a-93e8-0e14583b3b30"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
